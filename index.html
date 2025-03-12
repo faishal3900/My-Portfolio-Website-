@@ -12,10 +12,11 @@
 </head>
 
 <body>
-    <header class="head-main">
-        <div class="container">
+
+    <header id="header" class="head-main">
+        <div id="main-box0" class="container">
             <div class="menu">
-                <i class='bx bx-menu'></i>
+                <i id="menubtn" class='bx bx-menu'></i>
             </div>
             <div class="h1-div">
                 <h1>Faishal Ali</h1>
@@ -24,23 +25,28 @@
                 <h2>I'm a passionate <span>Web developer</span> from India, New delhi.</h2>
             </div>
 
-            <div class="nav-div">
-                <ul class="d-flex " id="ul-item">
-                    <li><a class="nav-btn-all" href=""> Home</a></li>
-                    <li><a class="nav-btn-all" href="#about"> About</a></li>
-                    <li><a class="nav-btn-all" href="#resume"> Resume</a></li>
-                    <!-- <li><a class="nav-btn-all" href=""> Services</a></li>
-                    <li><a class="nav-btn-all" href=""> Portfolio</a></li>
-                    <li><a class="nav-btn-all" href=""> Contact</a></li> -->
+            <div class="nav-div ">
+                <ul class="d-flex" id="ul-item">
+                    <li><a class="nav-btn-all active" id="homebtnid" href=""> Home</a></li>
+                    <li><a class="nav-btn-all" id="aboutbtnid" href="#"> About</a></li>
+                    <li><a class="nav-btn-all" id="resumebtnid" href="#"> Resume</a></li>
+                    <!-- <li><a class="nav-btn-all" href=""> Services</a></li> -->
+                    <li><a class="nav-btn-all" id="portfoliobtnid" href="#"> Portfolio</a></li>
+                    <li><a class="nav-btn-all" id="contactbtnid" href="#"> Contact</a></li>
                 </ul>
             </div>
+
             <div class="social-links">
-                <a href="#" class="social-a"><i class='bx bxl-twitter social-icon'></i></a>
-                <a href="#" class="social-a"><i class='bx bxl-facebook-circle social-icon'></i></a>
-                <a href="#" class="social-a"><i class='bx bxl-instagram-alt social-icon'></i></a>
-                <a href="#" class="social-a"><i class='bx bxl-linkedin-square social-icon'></i></a>
+                <a href="https://github.com/faishal3900" class="social-a"><i class='bx bxl-github social-icon'></i></a>
+                <a href="https://www.facebook.com/fa.faishal" class="social-a"><i
+                        class='bx bxl-facebook-circle social-icon'></i></a>
+                <a href="https://www.instagram.com/mdali_74/" class="social-a"><i
+                        class='bx bxl-instagram-alt social-icon'></i></a>
+                <a href="https://www.linkedin.com/in/faishal-ali-651418181/" class="social-a"><i
+                        class='bx bxl-linkedin-square social-icon'></i></a>
             </div>
         </div>
+
     </header>
     <!-- ------------about -------------->
     <section id="about" class="about">
@@ -175,17 +181,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div>
-                <div class="skills-div">
-                    <h6>INTERESTS</h6>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <i></i>
-                            <h1></h1>
-                        </div>
-                    </div> -->
         </div>
         </div>
         </div>
@@ -211,7 +206,7 @@
                             innovation, continuous learning, and personal growth.
                         </p>
                         <ul>
-                            <li class="li-12">G-501 Sangam Vihar New Delhi 110080</li>
+                            <li class="li-12">New Delhi</li>
                             <li class="li-12">+91 7428373805</li>
                             <li class="li-12">faishal3900@gmail.com</li>
                         </ul>
@@ -236,12 +231,26 @@
 
 
                 <div class="col-lg-6">
-                    <h3 class="resume-title">Projact Detail</h3>
+                    <h3 class="resume-title">Project Detail</h3>
                     <div class="resume-1">
                         <p class="alice">Nykaa</p>
                         <p>
-                            Developed a responsive and interactive web application Nykaa front-end interface. User
-                            Interface Design: Created a visually appealing and user-friendly layout using HTML, CSS.
+                            Nykaa front-end interface. User Interface Design Using by HTML, CSS.
+                        </p>
+                        <p class="alice">Temperature Card</p>
+                        <p>
+                            Designed and developed a responsive Temperature Card using HTML, CSS, and JavaScript.
+
+                        </p>
+                        <p class="alice">Bubble Game</p>
+                        <p>
+                            Developed an interactive Bubble Game using HTML, CSS, and JavaScript.
+                        </p>
+                        <p class="alice"> Tomato</p>
+                        <p>
+                            Designed and developed a Tomato E-Commerce Website using React JS, CSS and for buying fresh
+                            Food online.
+
                         </p>
                     </div>
                 </div>
@@ -255,6 +264,16 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">CERTIFICATES</h3>
+                    <div class="resume-1">
+                        <p class="alice">My Certificates</p>
+                        <ul>
+                            <li class="li-12">Full Stack Developer (04/2024 - 04/2025)</li>
+                            <li class="li-12">Graphic & Web Designer (2023) </li>
+                        </ul>
+                    </div>
+                </div>
 
 
 
@@ -265,11 +284,184 @@
         </div>
     </section>
 
+    <!---------------- Portfolio------------------------- -->
+
+    <section id="portfolio" class="portfolio about">
+        <div class="container Portfolio-my">
+            <div class="Portfolio-main-title">
+                <h6>PORTFOLIO</h6>
+                <h1>MY WORKS</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+
+                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-card">Card</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="Nykaa.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Nykaa clone</h4>
+                            <p>Website</p>
+                            <div class="portfolio-links">
+                                <a href="Nykaa.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="nykaa\index.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="Cynthia.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Cynthia clone</h4>
+                            <p>Website</p>
+                            <div class="portfolio-links">
+                                <a href="Cynthia.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="web/web/index.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="Game.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Game js</h4>
+                            <p>Website</p>
+                            <div class="portfolio-links">
+                                <a href="Game.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="Game"><i class="bx bx-plus"></i></a>
+                                <a href="game/index.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="Weather card.jpg " class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Weather card</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="Weather card.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="Game"><i class="bx bx-plus"></i></a>
+                                <a href="temp card/index.html" data-gallery="portfolioDetailsGallery"
+                                    data-glightbox="type: external" class="portfolio-details-lightbox"
+                                    title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-------------------------- contact---------------------- -->
+
+    <section id="contact" class="contact ">
+        <div class="container Portfolio-my">
+
+            <div class="Portfolio-main-title">
+                <h6>Contact</h6>
+                <h1>Contact Me</h1>
+            </div>
+
+            <div class="row mt-2">
+
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-map"></i>
+                        <h3>My Address</h3>
+                        <p>Sangam vihar, New Delhi </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-share-alt"></i>
+                        <h3>Social Profiles</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-a"><i class='bx bxl-twitter social-icon color-social'></i></a>
+                            <a href="facebook.com/fa.faishal" class="social-a"><i
+                                    class='bx bxl-facebook-circle social-icon color-social'></i></a>
+                            <a href="Faishal Ali (@mdali_74) • Instagram photos and videos.html" class="social-a"><i
+                                    class='bx bxl-instagram-alt social-icon color-social'></i></a>
+                            <a href="linkedin.com/in/faishal-ali-651418181.html" class="social-a"><i
+                                    class='bx bxl-linkedin-square social-icon color-social'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Me</h3>
+                        <p>faishal3900@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Call Me</h3>
+                        <p>+91 7428373805</p>
+                    </div>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form mt-4">
+                    <input type="hidden" name="access_key" value="46c4d584-77a2-4b6b-be4e-20d90db84fef">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
 
 
-
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
